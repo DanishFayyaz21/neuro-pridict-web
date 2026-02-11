@@ -1,14 +1,17 @@
 const FeatureDiagram = () => {
     return (
-        <div className="relative mt-32">
+        <div className="relative mt-10">
             {/* Background Image */}
             <div className="absolute inset-0 opacity-50">
-                <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" />
+                <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" style={{ objectPosition: 'top' }} />
             </div>
 
-            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[600px]">
+            {/* Gradient Fade to Black at Bottom */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black pointer-events-none"></div>
+
+            <div className="relative mx-auto px-6 lg:px-12 py-24 flex justify-center items-center min-h-[600px]">
                 {/* Diagram Container */}
-                <div className="relative bg-[#0F0F0F] w-[50%] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
+                <div className="relative bg-[#0F0F0F] w-[60%] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg
