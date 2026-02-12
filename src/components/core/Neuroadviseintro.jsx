@@ -1,6 +1,6 @@
 const Neuroadviseintro = () => {
   return (
-    <section className="relative py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-black via-gray-950 to-black overflow-hidden">
+    <section className="relative py-12  bg-gradient-to-b from-black via-gray-950 to-black overflow-hidden">
       {/* Background Glow Orbs – slightly smaller & repositioned */}
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-3xl animate-pulse-slow"></div>
       <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
@@ -11,7 +11,7 @@ const Neuroadviseintro = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
 
         {/* Top Arrow – closer to logo */}
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mt-4">
           <div className="inline-flex items-center gap-8">
             <div className="relative group cursor-pointer">
               <div className="absolute -inset-4 bg-gradient-to-r from-white/20 to-white/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
@@ -29,10 +29,10 @@ const Neuroadviseintro = () => {
         </div>
 
         {/* Logo + Subtitle – very tight */}
-        <div className="relative mb-5">
-          <div className="absolute -top-12 -bottom-12 -left-12 -right-12 bg-gradient-radial from-purple-600/10 via-transparent to-transparent opacity-30"></div>
+        <div className="relative mb-1">
+          <div className="absolute -top-13 -bottom-15 -left-12 -right-12  "></div>
 
-          <div className="flex justify-center items-center mb-2">
+          <div className="flex justify-center items-center mt-4 px-8">
             <img
               src="/images/logo neuroadvise ps.png"
               alt="NEURO ADVISE"
@@ -41,28 +41,19 @@ const Neuroadviseintro = () => {
             />
           </div>
 
-          <div className="mt-1">
-            <span className="text-sm md:text-base text-white/90 font-medium tracking-wide">
+          <div className="mb-10">
+            <span className="text-white font-bold text-2xl">
               AI-Powered Creative Recommendations
             </span>
           </div>
         </div>
 
         {/* Description – minimal margin, slightly less padding */}
-        <div className="relative mb-4">
-          <div className="absolute -inset-5 bg-gradient-to-r from-purple-900/10 via-black/50 to-blue-900/10 rounded-3xl blur-xl"></div>
-          <div className="relative bg-gradient-to-b from-gray-900/30 to-black/30 backdrop-blur-sm border border-gray-800/50 rounded-2xl p-6 md:p-8">
-            <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light tracking-tight">
-              <span className="text-gray-300 font-normal">Neuroadvise</span> transforms insights from{' '}
-              <span className="text-gray-300 font-normal">Attention</span>,{' '}
-              <span className="text-gray-300 font-normal">Empath</span>, and{' '}
-              <span className="text-gray-300 font-normal">Lumina</span> into clear, actionable recommendations.
-              <br className="hidden md:block" />
-              <br className="hidden md:block" />
-              Instead of raw data, you get concrete suggestions:{' '}
-              <span className="text-gray-300">what to change</span>,{' '}
-              <span className="text-gray-300">why it matters</span>, and{' '}
-              <span className="text-gray-300">how it will likely impact performance</span>.
+        <div className="relative mb-1">
+          <div className="absolute -inset-5 bg-black rounded-3xl blur-xl"></div>
+          <div className="relative text-[#AAAAAA] bg-black  rounded-2xl p-6 md:p-8">
+            <p className="text-base md:text-lg lg:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl mx-auto ">
+             NeuroAdvise transforms insights from Aittention, Empath, and Lumina into clear, actionable recommendations. Instead of raw data, you get concrete suggestions: what to change, why it matters, and how it will likely impact performance.
             </p>
           </div>
         </div>

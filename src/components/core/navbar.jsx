@@ -1,7 +1,7 @@
 export default function Navbar() {
 
     return (
-        <nav className="flex items-center justify-between px-6 lg:px-12 py-4">
+        <nav className="flex items-center justify-between px-6 lg:px-12 py-4 font-sans">
             <div className="flex items-center gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2">

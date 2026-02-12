@@ -4,13 +4,13 @@ const ModernFooter = () => {
             {/* Subtle glow effect at top */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
 
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto ">
                 {/* Main 4-column grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10 md:mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 md:gap-20 mb-8 sm:mb-10 md:mb-12">
 
                     {/* Left Section - Newsletter */}
                     <div className="space-y-3 sm:space-y-3 lg:col-span-1">
-                        <h3 className="text-white font-bold text-base sm:text-lg tracking-tight">Subscribe to Newsletter</h3>
+                        <h3 className="text-white font-medium text-base sm:text-lg tracking-tight font-clash-display font-500">Subscribe to Newsletter</h3>
                         <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
                             Get monthly insights from founders around the globe.
                             <br />
@@ -18,21 +18,21 @@ const ModernFooter = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3">
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-[320px] relative">
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full bg-gray-900 border border-gray-800 rounded-xl py-2 sm:py-3 px-3 sm:px-4 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/30 transition-all duration-200 text-sm sm:text-base"
+                                    className="w-full bg-[#1E1E1E66] text-[#3A3A3A]  rounded-2xl py-2 sm:py-3 px-3 sm:px-4 pr-20  placeholder-gray-500 focus:outline-none  focus:ring-1 focus:ring-purple-500/30 transition-all duration-200 text-sm sm:text-base"
                                 />
+                                <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#5552FF] text-white font-medium py-1.5 sm:py-2 px-3 sm:px-4 rounded-lg hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500/50 whitespace-nowrap text-xs sm:text-sm">
+                                    Subscribe
+                                </button>
                             </div>
-                            <button className="bg-[#5552FF] text-white font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500/50 whitespace-nowrap text-sm sm:text-base">
-                                Subscribe
-                            </button>
                         </div>
                     </div>
 
                     {/* Middle Section - Company */}
-                    <div className="space-y-4 sm:space-y-5">
+                    <div className="space-y-4 sm:space-y-5 ml-12">
                         <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Company</h4>
                         <ul className="space-y-2 sm:space-y-3">
                             {['Roadmap', 'About', 'Benefits'].map((item) => (
@@ -49,7 +49,7 @@ const ModernFooter = () => {
                     </div>
 
                     {/* Middle Section - Product */}
-                    <div className="space-y-4 sm:space-y-5">
+                    <div className="space-y-4 sm:space-y-5 ml-12">
                         <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Product</h4>
                         <ul className="space-y-2 sm:space-y-3">
                             {['Analysis', 'Scale', 'Developer', 'API', 'Pricing'].map((item) => (
@@ -66,7 +66,7 @@ const ModernFooter = () => {
                     </div>
 
                     {/* Right Section - Pages */}
-                    <div className="space-y-4 sm:space-y-5">
+                    <div className="space-y-4 sm:space-y-5 ml-12">
                         <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Pages</h4>
                         <ul className="space-y-2 sm:space-y-3">
                             {['Var 1.0', 'Var 1.1', 'Var 1.2'].map((item) => (
