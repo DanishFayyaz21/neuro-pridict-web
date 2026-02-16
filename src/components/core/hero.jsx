@@ -1,11 +1,11 @@
 export default function Hero() {
     return (
-    <div className="text-center max-w-4xl mx-auto relative z-10 pt-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-2">
+        <div className="text-center max-w-4xl mx-auto relative z-10 pt-18">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
             Unlock Product Insights
           </h1>
           <h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6"
             style={{
               background: 'linear-gradient(90deg, #5653FF, #D252FF)',
               WebkitBackgroundClip: 'text',
@@ -15,7 +15,7 @@ export default function Hero() {
           >
             Make Better Decisions
           </h2>
-          <p className="text-gray-400 text-lg mb-8">
+          <p className="text-gray-400 text-sm md:text-lg mb-8">
             NeuroPredict Labs™ helps brands and designers stop guessing.
           </p>
           <button className="inline-flex items-center gap-2 bg-[#5552FF] hover:bg-purple-700 text-white text-xs px-4 py-2 rounded-full transition-colors">
