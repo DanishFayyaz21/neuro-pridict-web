@@ -173,7 +173,7 @@ function ShaderPlane() {
   });
 
   return (
-    <mesh ref={meshRef} position={[0, -2, -0.5]}>
+    <mesh ref={meshRef} position={[0, -0.55, -0.1]}>
       <planeGeometry args={[6, 6]} />
       <cPPNShaderMaterial ref={materialRef} side={THREE.DoubleSide} />
     </mesh>
@@ -189,13 +189,11 @@ function ShaderBackground() {
     if (!canvasRef.current) return;
     
     gsap.set(canvasRef.current, {
-      filter: 'blur(20px)',
       scale: 1.1,
       autoAlpha: 0.7
     });
     
     gsap.to(canvasRef.current, {
-      filter: 'blur(0px)',
       scale: 1,
       autoAlpha: 1,
       duration: 1.5,
@@ -213,7 +211,7 @@ function ShaderBackground() {
         camera={camera}
         gl={{ antialias: true, alpha: false }}
         dpr={[1, 2]}
-        style={{ width: '100%', height: '100%' }}>
+        style={{ width: '100%', height: '95%' }}>
         <ShaderPlane />
       </Canvas>
       <div
@@ -277,8 +275,8 @@ export default function Hero() {
         yPercent: 0,
         autoAlpha: 1,
         scale: 1,
-        duration: 0.9,
-        stagger: 0.15,
+        duration: 1.2,
+        stagger: 0.08,
       }, 0.1);
 
       if (paraRef.current) {
@@ -294,7 +292,7 @@ export default function Hero() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="relative w-full min-h-screen overflow-hidden">
+    <section ref={sectionRef} className="relative w-full min-h-screen overflow-hidden ">
   <ShaderBackground />
 
   {/* Top Fade */}

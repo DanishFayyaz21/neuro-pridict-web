@@ -48,7 +48,7 @@ const NeuroLabPredict = () => {
   };
 
   return (
-    <div ref={ref} className="min-h-screen bg-black text-gray-200">
+    <div ref={ref} className="min-h-screen h-[200px] bg-black text-gray-200 -mt-[-45px] ">
       <motion.div
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
