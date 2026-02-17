@@ -58,14 +58,14 @@ export default function Hero() {
             animate={isInView ? "visible" : "hidden"}
         >
           <motion.h1 
-            className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-2"
+            className="text-4xl md:text-5xl font-clash lg:text-6xl  mb-2"
             variants={itemVariants}
           >
             Unlock Product Insights
           </motion.h1>
           
           <motion.h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6"
+            className="text-3xl md:text-4xl font-clash lg:text-6xl  mb-6"
             variants={itemVariants}
             style={{
               background: 'linear-gradient(90deg, #5653FF, #D252FF)',
@@ -89,7 +89,7 @@ export default function Hero() {
           </motion.p>
           
           <motion.button 
-            className="inline-flex items-center gap-2 bg-[#5552FF] hover:bg-purple-700 text-white text-xs px-4 py-2 rounded-full"
+            className="inline-flex items-center gap-2 bg-[#5552FF] text-white text-xs px-4 py-2 rounded-full"
             variants={itemVariants}
             whileHover={{ 
               scale: 1.05,

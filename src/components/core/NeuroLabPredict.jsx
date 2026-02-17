@@ -54,8 +54,8 @@ const NeuroLabPredict = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h1 className="text-center text-4xl sm:text-5xl md:text-6xl font-semibold mb-0 tracking-tight">
-          <span className="bg-gradient-to-r from-[#5653FF] to-[#D252FF] bg-clip-text text-transparent">Welcome to</span>
+        <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-semibold mb-0 tracking-tight">
+          <span className="bg-gradient-to-r from-[#5653FF] to-[#D252FF] font-darker bg-clip-text text-transparent">Welcome to</span>
         </h1>
         <motion.div 
           className="flex justify-center items-center mb-4"
@@ -63,7 +63,7 @@ const NeuroLabPredict = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
         >
-          <img src="/images/labwhite.png" alt="LAB" className="max-w-lg w-full h-auto" loading="eager" />
+          <img src="/images/labwhite.png" alt="LAB" className="max-w-md w-full h-auto" loading="eager" />
         </motion.div>
       </motion.div>
 
@@ -101,7 +101,7 @@ const NeuroLabPredict = () => {
                 <img src="/images/aittention.png" alt="attention" className="h-16 w-auto" loading="eager" />
               </motion.div>
               <motion.div className="text-[#AAAAAA] ml-10 text-lg leading-relaxed mb-8">
-                <p className="font-semibold text-white">Predict Visual Attention Before You Publish</p> 
+                <p className="font-semibold font-darker text-white">Predict Visual Attention Before You Publish</p> 
                 <br />
                 Aittention uses neuroscience-inspired AI to predict exactly where people will look when they see your creative. Heatmaps reveal visual saliency in seconds, helping you optimize layouts, hierarchies, and focal points before launch, no eye-tracking hardware required.
               </motion.div>
@@ -215,7 +215,7 @@ const NeuroLabPredict = () => {
                 animate={{ opacity: card3InView ? 1 : 0 }}
                 transition={{ delay: 0.4 }}
               >
-                <p className="text-white font-semibold">Reveal Behavioral Patterns & User Intent</p> 
+                <p className="text-white font-darker font-semibold">Reveal Behavioral Patterns & User Intent</p> 
                 <br />
                 Lumina goes beyond what users do, it helps explain why they do it. By analysing interaction flows and behavioural signals, Lumina highlights friction points, engagement drivers, and hidden opportunities to improve user experience and performance.
               </motion.div>

@@ -45,7 +45,7 @@ const Neuroadviseintro = () => {
   return (
     <motion.section 
       ref={ref}
-      className="relative py-12 bg-gradient-to-b from-black via-gray-950 to-black overflow-hidden"
+      className="relative py-24 bg-gradient-to-b from-black via-gray-950 to-black overflow-hidden mt-35"
       style={{
         y: parallaxY
       }}
@@ -55,7 +55,7 @@ const Neuroadviseintro = () => {
     >
       {/* Background Glow Orbs – slightly smaller & repositioned */}
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px]  bg-blue-600/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
 
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:80px_80px]"></div>
@@ -115,7 +115,7 @@ const Neuroadviseintro = () => {
             className="mb-10"
             variants={itemVariants}
           >
-            <span className="text-white font-bold text-2xl">
+            <span className="text-white font-normal font-darker text-2xl">
               AI-Powered Creative Recommendations
             </span>
           </motion.div>

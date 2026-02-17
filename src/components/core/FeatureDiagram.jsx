@@ -9,7 +9,7 @@ const FeatureDiagram = () => {
 
                 {/* <img src="/images/hero.png" alt="Hero Background" className="w-[110%] h-[80%] object-cover" /> */}
             </div>
-            <div className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center items-center min-h-[800px] lg:min-h-[870px] xl:min-h-[940px]">
+            <div className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center  w-[90%] items-center min-h-[800px] lg:min-h-[870px] xl:min-h-[940px]">
                 {/* Diagram Container */}
                 <div className="relative bg-black w-[80%] mb-[-2%] border backdrop-blur-sm rounded-2xl p-8 md:p-12 overflow-hidden border-b-0">
 
@@ -21,7 +21,7 @@ const FeatureDiagram = () => {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         {/* Optional: existing dashed rect – keeping it if you want */}
-                        <rect x="100" y="120" width="400" height="220" rx="12" stroke="white" strokeWidth="1.5" strokeDasharray="15 15" />
+                        <rect x="130" y="150" width="350" height="160" rx="8" stroke="white" strokeWidth="3" strokeDasharray="50 30" />
                     </svg>
 
                     {/* Arrow 1 → Top Left box */}
@@ -112,7 +112,7 @@ const FeatureDiagram = () => {
 
                     {/* Center Button */}
                     <div className="flex justify-center my-10 md:my-14 z-10 relative">
-                        <button className="flex items-center gap-3 bg-[#0F0F0F] border text-white px-6 py-3 rounded-full font-bold  transition-colors">
+                        <button className="flex items-center gap-3 bg-[#0F0F0F] border font-darker font-semibold text-3xl text-white px-6 py-3 rounded-full font-bold  transition-colors">
                             <svg className="w-10 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                             </svg>

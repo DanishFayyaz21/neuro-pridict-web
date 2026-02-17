@@ -10,7 +10,7 @@ const ModernFooter = () => {
 
                     {/* Left Section - Newsletter */}
                     <div className="space-y-3 sm:space-y-3 lg:col-span-1">
-                        <h3 className="text-white font-medium text-base sm:text-lg tracking-tight font-clash-display font-500">Subscribe to Newsletter</h3>
+                        <h3 className="text-white font-medium text-base sm:text-lg tracking-tight font-clash font-500">Subscribe to Newsletter</h3>
                         <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
                             Get monthly insights from founders around the globe.
                             <br />
@@ -36,7 +36,7 @@ const ModernFooter = () => {
                         <div className="grid grid-cols-2 gap-4 sm:gap-8">
                             {/* Company */}
                             <div className="space-y-4 sm:space-y-5">
-                                <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Company</h4>
+                                <h4 className="text-white font-medium mb-3 font-clash sm:mb-5 text-base sm:text-lg">Company</h4>
                                 <ul className="space-y-2 sm:space-y-3">
                                     {['Roadmap', 'About', 'Benefits'].map((item) => (
                                         <li key={item}>
@@ -53,7 +53,7 @@ const ModernFooter = () => {
                             
                             {/* Product */}
                             <div className="space-y-4 sm:space-y-5">
-                                <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Product</h4>
+                                <h4 className="text-white font-medium mb-3 font-clash sm:mb-5 text-base sm:text-lg">Product</h4>
                                 <ul className="space-y-2 sm:space-y-3">
                                     {['Analysis', 'Scale', 'Developer'].map((item) => (
                                         <li key={item}>
