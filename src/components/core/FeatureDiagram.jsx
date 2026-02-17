@@ -9,9 +9,9 @@ const FeatureDiagram = () => {
 
                 {/* <img src="/images/hero.png" alt="Hero Background" className="w-[110%] h-[80%] object-cover" /> */}
             </div>
-            <div className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center  w-[90%] items-center min-h-[800px] lg:min-h-[870px] xl:min-h-[940px]">
+            <div className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center   items-center min-h-[800px] lg:min-h-[870px] xl:min-h-[940px]">
                 {/* Diagram Container */}
-                <div className="relative bg-black w-[80%] mb-[-2%] border backdrop-blur-sm rounded-2xl p-8 md:p-12 overflow-hidden border-b-0">
+                <div className="relative bg-black  mb-[-6%] border w-[80%] backdrop-blur-sm rounded-2xl p-8 md:p-12 overflow-hidden border-b-0">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg

@@ -88,7 +88,7 @@ const FeatureDiagramMobile = () => {
                     <div className="relative grid grid-cols-2 pb-16 gap-8 md:gap-16 z-10">
 
                         {/* Top Left Feature */}
-                        <div className="flex justify-start">
+                        <div className="flex justify-end">
                             <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[84%] h-[90%] border border-zinc-700 text-center">
                                 <p className="text-sm text-white">
                                     <span className="text-white">Avoid confusion</span><br />

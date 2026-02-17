@@ -173,8 +173,8 @@ function ShaderPlane() {
   });
 
   return (
-    <mesh ref={meshRef} position={[0, -0.75, -0.5]}>
-      <planeGeometry args={[4, 4]} />
+    <mesh ref={meshRef} position={[0, -2, -0.5]}>
+      <planeGeometry args={[6, 6]} />
       <cPPNShaderMaterial ref={materialRef} side={THREE.DoubleSide} />
     </mesh>
   );
