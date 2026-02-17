@@ -6,7 +6,7 @@ const ModernFooter = () => {
 
             <div className="max-w-7xl mx-auto ">
                 {/* Main grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 md:gap-20 mb-8 sm:mb-10 md:mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-23 mb-8 sm:mb-10 md:mb-12">
 
                     {/* Left Section - Newsletter */}
                     <div className="space-y-3 sm:space-y-3 lg:col-span-1">
@@ -70,22 +70,6 @@ const ModernFooter = () => {
                         </div>
                     </div>
 
-                    {/* Right Section - Pages (hidden on mobile) */}
-                    <div className="space-y-4 sm:space-y-5 ml-0 sm:ml-12 hidden sm:block">
-                        <h4 className="text-white font-semibold mb-3 sm:mb-5 text-base sm:text-lg">Pages</h4>
-                        <ul className="space-y-2 sm:space-y-3">
-                            {['Var 1.0', 'Var 1.1', 'Var 1.2'].map((item) => (
-                                <li key={item}>
-                                    <a
-                                        href="#"
-                                        className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm hover:pl-1 transform hover:translate-x-1 block"
-                                    >
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
                 </div>
 
                 {/* Bottom Section */}
