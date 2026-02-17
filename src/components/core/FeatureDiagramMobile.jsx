@@ -9,9 +9,9 @@ const FeatureDiagramMobile = () => {
                 {/* <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" /> */}
             </div>
 
-            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[600px]">
+            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[500px]">
                 {/* Diagram Container */}
-                <div className="relative bg-[#0F0F0F] w-[100%] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
+                <div className="relative bg-[#0F0F0F] w-[100%] h-[540px] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg
@@ -26,10 +26,10 @@ const FeatureDiagramMobile = () => {
 
                     {/* Arrow 2 → Top Left box */}
                     <div
-                        className="absolute top-[19%] left-[20%] bottom-[70%] w-44 md:w-52 opacity-80"
-                        style={{ transform: 'rotate(-300deg)' }}
+                        className="absolute top-[20%] left-[70%] bottom-[27%] w-44 md:w-52 opacity-80"
+                        style={{ transform: 'rotate(-500deg) ' }}
                     >
-                        <svg width="251" height="60" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="201" height="40" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
@@ -56,10 +56,10 @@ const FeatureDiagramMobile = () => {
 
                     {/* Arrow 4 → Bottom right box */}
                     <div
-                        className="absolute bottom-[12%] right-[35%]  left-[55%] top-[52%]  w-40 md:w-48 opacity-80"
-                        style={{ transform: 'rotate(10deg)' }}
+                        className="absolute bottom-[60%] right-[45%]  left-[39%] top-[42%]  w-40 md:w-48 opacity-80"
+                        style={{ transform: 'rotate(250deg)' }}
                     >
-                        <svg width="84" height="80" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="130" height="110" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.50721 1.49246C5.67805 37.2478 34.2878 103.149 113.418 112.673M113.418 112.673L95.7436 121.771M113.418 112.673L98.7143 99.4051"
                                 stroke="white"
@@ -111,8 +111,8 @@ const FeatureDiagramMobile = () => {
                     </div>
 
                     {/* Center Button */}
-                    <div className="flex justify-center my-6 sm:my-8 md:my-10 z-10 relative">
-                        <button className="flex items-center gap-2 sm:gap-3  text-white border px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-medium  text-xs sm:text-sm">
+                    <div className="flex justify-center my-6 sm:my-8 h-[10%] md:my-10 z-10 relative">
+                        <button className="flex items-center w-[60%]  gap-2 sm:gap-3  text-white border px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-medium  text-xs sm:text-sm">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                             </svg>
