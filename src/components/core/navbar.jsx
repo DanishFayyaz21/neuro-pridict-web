@@ -50,7 +50,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Get Started Button */}
-            <div className="md:hidden">
+            <div className="hidden md:hidden">
                 <button className="bg-[#5552FF] hover:bg-purple-700 text-white px-4 py-2 rounded-full transition-colors text-sm">
                     Get Started
                 </button>
@@ -123,7 +123,7 @@ export default function Navbar() {
                             <a href="#" onClick={closeMobileMenu} className="w-full flex items-center justify-center px-4 py-3 text-center rounded-lg border border-gray-600/50 text-gray-300 hover:border-gray-500 hover:text-white transition-all duration-200 font-medium">
                                 Log In
                             </a>
-                            <button onClick={closeMobileMenu} className="w-full flex items-center justify-center px-4 py-3 text-center rounded-lg bg-gradient-to-r from-[#5552FF] to-[#7C3AED] hover:from-[#4A41E8] hover:to-[#6D28D9] text-white font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+                            <button onClick={closeMobileMenu} className="hidden w-full flex items-center justify-center px-4 py-3 text-center rounded-lg bg-gradient-to-r from-[#5552FF] to-[#7C3AED] hover:from-[#4A41E8] hover:to-[#6D28D9] text-white font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
                                 Get Started
                             </button>
                         </div>

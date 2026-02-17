@@ -84,7 +84,7 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/app icon aittention.png"
                 alt="Attention"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_25px_#5754FFFF] group-hover:scale-105 transition-transform duration-400"
+                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#5754FFFF] group-hover:scale-105 transition-transform duration-400"
                 loading="eager"
               />
             </motion.div>
@@ -137,7 +137,7 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/empathlogo.png"
                 alt="Empath"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_25px_#2CB06B] group-hover:scale-105 transition-transform duration-400"
+                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#2CB06B] group-hover:scale-105 transition-transform duration-400"
                 loading="eager"
               />
             </motion.div>
@@ -151,7 +151,7 @@ const NeuroLabPredict = () => {
                 animate={{ opacity: card2InView ? 1 : 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <img src="/images/empath.png" alt="empath" className="h-26 w-auto" loading="eager" />
+                <img src="/images/empath.png" alt="empath" className="h-26 w-auto md:-ml-1 ml-4" loading="eager" />
               </motion.div>
               <motion.p 
                 className="text-[#AAAAAA] text-lg leading-relaxed mb-8 font-light font-popins"
@@ -193,7 +193,7 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/luminalogo.png"
                 alt="Lumina"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_25px_#2945F5] group-hover:scale-105 transition-transform duration-400"
+                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#2945F5] group-hover:scale-105 transition-transform duration-400"
                 loading="eager"
               />
             </motion.div>

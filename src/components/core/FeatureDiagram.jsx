@@ -89,7 +89,7 @@ const FeatureDiagram = () => {
 
                         {/* Top Left Feature */}
                         <div className="flex justify-start">
-                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[35%] h-[70%] border  text-center">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[45%] h-[73%] border  text-center">
                                 <p className="text-sm text-white">
                                     <span>Avoid confusion</span><br />
                                     detect friction early
@@ -125,7 +125,7 @@ const FeatureDiagram = () => {
 
                         {/* Bottom Left Feature */}
                         <div className="flex justify-start ml-16 pt-4">
-                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl p-4 w-[55%] h-[85%] border">
+                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl p-4 w-[65%] h-[70%] border">
                                 <p className="text-sm text-white">
                                     See if your message flows<br />
                                     in the right <span className="font-bold">visual order</span>

@@ -33,7 +33,7 @@ const ModernFooter = () => {
 
                     {/* Middle Section - Company & Product in 2 columns */}
                     <div className="lg:col-span-2">
-                        <div className="grid grid-cols-2 gap-4 sm:gap-8">
+                        <div className="grid grid-cols-2 gap-40 sm:gap-8">
                             {/* Company */}
                             <div className="space-y-4 sm:space-y-5">
                                 <h4 className="text-white font-medium mb-3 font-clash sm:mb-5 text-base sm:text-lg">Company</h4>

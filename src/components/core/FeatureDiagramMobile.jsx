@@ -1,9 +1,12 @@
+import Hero from '../neural-network-hero.jsx';
+
 const FeatureDiagramMobile = () => {
     return (
         <div className="relative mt-32">
             {/* Background Image */}
             <div className="absolute inset-0 opacity-50">
-                <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" />
+                <Hero />    
+                {/* <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" /> */}
             </div>
 
             <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[600px]">

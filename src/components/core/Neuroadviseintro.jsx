@@ -45,7 +45,7 @@ const Neuroadviseintro = () => {
   return (
     <motion.section 
       ref={ref}
-      className="relative py-24 bg-gradient-to-b from-black via-gray-950 to-black overflow-hidden mt-35"
+      className="relative py-24 bg-black overflow-hidden mt-35"
       style={{
         y: parallaxY
       }}
@@ -54,7 +54,7 @@ const Neuroadviseintro = () => {
       animate={isInView ? "visible" : "hidden"}
     >
       {/* Background Glow Orbs – slightly smaller & repositioned */}
-      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-purple-600/5 bg-black rounded-full blur-3xl animate-pulse-slow"></div>
       <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px]  bg-blue-600/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
 
       {/* Subtle Grid Pattern */}
@@ -95,7 +95,7 @@ const Neuroadviseintro = () => {
           className="relative mb-1"
           variants={itemVariants}
         >
-          <div className="absolute -top-13 -bottom-15 -left-12 -right-12  "></div>
+          <div className="absolute -top-13 -bottom-15 -left-12 -right-12   "></div>
 
           <div className="flex justify-center items-center mt-4 px-8">
             <motion.img
