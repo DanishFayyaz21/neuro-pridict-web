@@ -45,7 +45,7 @@ const Neuroadviseintro = () => {
   return (
     <motion.section 
       ref={ref}
-      className="relative py-24 bg-black overflow-hidden mt-35"
+      className="relative py-24  overflow-hidden mt-35"
       style={{
         y: parallaxY
       }}
@@ -102,6 +102,12 @@ const Neuroadviseintro = () => {
               src="/images/logo neuroadvise ps.png"
               alt="NEURO ADVISE"
               className="max-w-xl w-full h-auto drop-shadow-2xl"
+              style={{
+                width: '681px',
+                height: '342px',
+                top: '3272px',
+                left: '381px'
+              }}
               loading="eager"
               variants={itemVariants}
               whileHover={{
@@ -126,13 +132,21 @@ const Neuroadviseintro = () => {
           className="relative mb-1"
           variants={itemVariants}
         >
-          <div className="absolute -inset-5 bg-black rounded-3xl blur-xl"></div>
-          <div className="relative text-[#AAAAAA] bg-black  rounded-2xl p-6 md:p-8">
+          <div className="absolute -inset-5  rounded-3xl blur-xl"></div>
+          <div className="relative text-[#AAAAAA]   rounded-2xl p-6 md:p-8">
             <motion.p 
-              className="text-base md:text-lg lg:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl mx-auto "
+              className="text-base md:text-lg lg:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl mx-auto text-center"
               variants={itemVariants}
+              style={{
+                fontWeight: 300,
+                fontStyle: 'light',
+                fontSize: '18px'
+              }}
             >
-               NeuroAdvise transforms insights from Aittention, Empath, and Lumina into clear, actionable recommendations. Instead of raw data, you get concrete suggestions: what to change, why it matters, and how it will likely impact performance.
+               NeuroAdvise transforms insights from Aittention, Empath, and Lumina<br />
+               into clear, actionable recommendations. Instead of raw data you get<br />
+               concrete suggestions: what to change, why it mattersand how it will likely<br />
+               impact performance.
             </motion.p>
           </div>
         </motion.div>

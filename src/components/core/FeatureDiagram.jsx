@@ -2,16 +2,12 @@ import Hero from "../neural-network-hero";
 
 const FeatureDiagram = () => {
     return (
-        <div className="relative mt-10">
+        <div className="relative ">
             {/* Background Image */}
-            <div className="absolute inset-0 opacity-90">
-                         <Hero   />
-
-                {/* <img src="/images/hero.png" alt="Hero Background" className="w-[110%] h-[80%] object-cover" /> */}
-            </div>
-            <div className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center   items-center min-h-[800px] lg:min-h-[870px] xl:min-h-[900px]">
+            <div 
+            className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center   items-center min-h-[770px] lg:min-h-[840px] xl:min-h-[870px]">
                 {/* Diagram Container */}
-                <div className="relative bg-black  mb-[-6%] border w-[80%] h-[100%]   backdrop-blur-sm rounded-2xl p-8 md:p-12 overflow-hidden border-b-0">
+                <div className="relative  mb-[-12%] border w-[80%] h-[100%]   backdrop-blur-sm rounded-t-2xl p-8 md:p-12 overflow-hidden border-b-0">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg
@@ -91,7 +87,7 @@ const FeatureDiagram = () => {
                         <div className="flex justify-start">
                             <div className="bg-[#1a1a1a] backdrop-blur text-start rounded-2xl p-4 w-[35%] h-[85%] border  text-center">
                                 <p className="text-sm text-white">
-                                    <span>Avoid confusion</span><br />
+                                    <span className="text-white font-bold">Avoid confusion</span><br />
                                     detect friction early
                                 </p>
                             </div>
@@ -112,7 +108,14 @@ const FeatureDiagram = () => {
 
                     {/* Center Button */}
                     <div className="flex justify-center my-10 md:my-14 z-10 relative">
-                        <button className="flex items-center gap-3 bg-[#0F0F0F] border font-darker font-semibold text-3xl text-white px-6 py-3 rounded-full font-bold  transition-colors">
+                        <button 
+                            className="flex items-center gap-3 bg-[#0F0F0F] border font-darker font-semibold text-3xl text-white px-6 py-3 rounded-full font-bold transition-colors"
+                            style={{
+                              fontWeight: 600,
+                              fontStyle: 'semibold',
+                              fontSize: '35px'
+                            }}
+                        >
                             <svg className="w-10 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                             </svg>

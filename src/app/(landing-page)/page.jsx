@@ -1,5 +1,5 @@
 
-
+"use client";
 import Hero from '@/components/core/hero';
 import NeuroLabPredict from '@/components/core/NeuroLabPredict';
 import ModernFooter from '@/components/core/ModernFooter';
@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
 
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen text-white overflow-hidden scroll-smooth">
 
       <Hero />
       

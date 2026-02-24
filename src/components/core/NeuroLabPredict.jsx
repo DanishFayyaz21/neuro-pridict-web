@@ -6,16 +6,16 @@ import { useRef } from 'react';
 
 const NeuroLabPredict = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   // Individual refs for each card
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
   const card3Ref = useRef(null);
 
-  const card1InView = useInView(card1Ref, { once: false, amount: 0.3 });
-  const card2InView = useInView(card2Ref, { once: false, amount: 0.3 });
-  const card3InView = useInView(card3Ref, { once: false, amount: 0.3 });
+  const card1InView = useInView(card1Ref, { once: true, amount: 0.3 });
+  const card2InView = useInView(card2Ref, { once: true, amount: 0.3 });
+  const card3InView = useInView(card3Ref, { once: true, amount: 0.3 });
 
   // Animation variants
   const leftVariants = {
@@ -48,14 +48,24 @@ const NeuroLabPredict = () => {
   };
 
   return (
-    <div ref={ref} className="min-h-screen bg-black text-gray-200 mt-0">
+    <div ref={ref} className="min-h-screen  text-gray-200 mt-0">
       <motion.div
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-semibold mb-0 tracking-tight">
-          <span className="bg-gradient-to-r from-[#5653FF] to-[#D252FF] font-darker bg-clip-text text-transparent">Welcome to</span>
+          <span 
+            className="bg-gradient-to-r from-[#5653FF] to-[#D252FF] font-darker bg-clip-text text-transparent"
+            style={{
+              fontWeight: 400,
+              fontStyle: 'normal',
+              fontSize: '55.27px',
+              lineHeight: '110%',
+              letterSpacing: '0%',
+              textAlign: 'center'
+            }}
+          >Welcome to</span>
         </h1>
         <motion.div 
           className="flex justify-center items-center mb-4"
@@ -63,7 +73,16 @@ const NeuroLabPredict = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
         >
-          <img src="/images/labwhite.png" alt="LAB" className="max-w-md w-full h-auto" loading="eager" />
+          <img 
+            src="/images/labwhite.png" 
+            alt="LAB" 
+            className="max-w-md"
+            style={{
+              width: '448.0380554199219px',
+              height: '174.0531768798828px'
+            }}
+            loading="eager" 
+          />
         </motion.div>
       </motion.div>
 
@@ -71,7 +90,7 @@ const NeuroLabPredict = () => {
         {/* Attention Card - Image Left, Details Right */}
         <motion.div 
           ref={card1Ref}
-          className="group relative bg-black backdrop-blur-xl rounded-2xl p-8 md:p-10"
+          className="group relative  backdrop-blur-xl rounded-2xl p-8 md:p-10"
           variants={containerVariants}
           initial="hidden"
           animate={card1InView ? "visible" : "hidden"}
@@ -84,7 +103,10 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/app icon aittention.png"
                 alt="Attention"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#5754FFFF] group-hover:scale-105 transition-transform duration-400"
+                className="max-w-[256px] w-full h-auto mb-14 drop-shadow-[0_0_80px_#5754FFFF] group-hover:scale-105 transition-transform duration-400"
+                style={{
+                  height: '247px'
+                }}
                 loading="eager"
               />
             </motion.div>
@@ -98,12 +120,34 @@ const NeuroLabPredict = () => {
                 animate={{ opacity: card1InView ? 1 : 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <img src="/images/aittention.png" alt="attention" className="h-16 w-auto" loading="eager" />
+                <img 
+                  src="/images/aittention.png" 
+                  alt="attention" 
+                  className="w-auto"
+                  style={{
+                    width: '418px',
+                    height: '75px'
+                  }}
+                  loading="eager" 
+                />
               </motion.div>
               <motion.div className="text-[#AAAAAA] ml-10 text-lg leading-relaxed mb-8">
-                <p className="font-semibold font-darker text-white">Predict Visual Attention Before You Publish</p> 
+                <p 
+                  className="font-darker text-white"
+                  style={{
+                    fontWeight: 500,
+                    fontStyle: 'medium',
+                    fontSize: '32px'
+                  }}
+                >Predict Visual Attention Before You Publish</p> 
                 <br />
-                Aittention uses neuroscience-inspired AI to predict exactly where people will look when they see your creative. Heatmaps reveal visual saliency in seconds, helping you optimize layouts, hierarchies, and focal points before launch, no eye-tracking hardware required.
+               <p 
+                  style={{
+                    fontWeight: 300,
+                    fontStyle: 'light',
+                    fontSize: '16px'
+                  }}
+                >Aittention uses neuroscience-inspired AI to predict exactly where people will look when they see your creative. Heatmaps reveal visual saliency in seconds, helping you optimize layouts, hierarchies, and focal points before launch, no eye-tracking hardware required.</p> 
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -112,7 +156,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 ml-12 bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3 ml-8  rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
@@ -124,7 +168,7 @@ const NeuroLabPredict = () => {
         {/* Empath Card - Details Left, Image Right */}
         <motion.div 
           ref={card2Ref}
-          className="group relative bg-black backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
+          className="group relative  backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
           variants={containerVariants}
           initial="hidden"
           animate={card2InView ? "visible" : "hidden"}
@@ -137,7 +181,11 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/empathlogo.png"
                 alt="Empath"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#2CB06B] group-hover:scale-105 transition-transform duration-400"
+                className="drop-shadow-[0_0_80px_#2CB06B] group-hover:scale-105 transition-transform duration-400"
+                style={{
+                  width: '239px',
+                  height: '230px'
+                }}
                 loading="eager"
               />
             </motion.div>
@@ -151,13 +199,27 @@ const NeuroLabPredict = () => {
                 animate={{ opacity: card2InView ? 1 : 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <img src="/images/empath.png" alt="empath" className="h-26 w-auto md:-ml-1 ml-4" loading="eager" />
+                <img 
+                  src="/images/empath.png" 
+                  alt="empath" 
+                  className="w-auto md:-ml-1 ml-4"
+                  style={{
+                    width: '478px',
+                    height: '169px'
+                  }}
+                  loading="eager" 
+                />
               </motion.div>
               <motion.p 
-                className="text-[#AAAAAA] text-lg leading-relaxed mb-8 font-light font-popins"
+                className="text-[#AAAAAA] leading-relaxed ml-4 mb-8"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: card2InView ? 1 : 0 }}
                 transition={{ delay: 0.4 }}
+                style={{
+                  fontWeight: 300,
+                  fontStyle: 'light',
+                  fontSize: '18px'
+                }}
               >
                 Empath analyzes visual and contextual cues to predict emotional responses triggered by your content. Understand whether your creative evokes trust, excitement, comfort, or rejection, and adjust messaging to better resonate with your audience.
               </motion.p>
@@ -168,7 +230,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3 rounded-full font-semibold text-white ml-3 transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
@@ -180,7 +242,7 @@ const NeuroLabPredict = () => {
         {/* Lumina Card - Image Left, Details Right */}
         <motion.div 
           ref={card3Ref}
-          className="group relative bg-black backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
+          className="group relative backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
           variants={containerVariants}
           initial="hidden"
           animate={card3InView ? "visible" : "hidden"}
@@ -193,7 +255,11 @@ const NeuroLabPredict = () => {
               <img
                 src="/logos/luminalogo.png"
                 alt="Lumina"
-                className="max-w-[200px] w-full h-auto drop-shadow-[0_0_80px_#2945F5] group-hover:scale-105 transition-transform duration-400"
+                className="drop-shadow-[0_0_80px_#2945F5] group-hover:scale-105 mb-12 transition-transform duration-400"
+                style={{
+                  width: '256px',
+                  height: '247px'
+                }}
                 loading="eager"
               />
             </motion.div>
@@ -215,9 +281,22 @@ const NeuroLabPredict = () => {
                 animate={{ opacity: card3InView ? 1 : 0 }}
                 transition={{ delay: 0.4 }}
               >
-                <p className="text-white font-darker font-semibold">Reveal Behavioral Patterns & User Intent</p> 
+                <p 
+                  className="font-darker text-white"
+                  style={{
+                    fontWeight: 500,
+                    fontStyle: 'medium',
+                    fontSize: '32px'
+                  }}
+                >Reveal Behavioral Patterns & User Intent</p> 
                 <br />
-                Lumina goes beyond what users do, it helps explain why they do it. By analysing interaction flows and behavioural signals, Lumina highlights friction points, engagement drivers, and hidden opportunities to improve user experience and performance.
+                <p 
+                  style={{
+                    fontWeight: 300,
+                    fontStyle: 'light',
+                    fontSize: '18px'
+                  }}
+                >Lumina goes beyond what users do, it helps explain why they do it. By analysing interaction flows and behavioural signals, Lumina highlights friction points, engagement drivers, and hidden opportunities to improve user experience and performance.</p>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -226,7 +305,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3  ml-[-8] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
