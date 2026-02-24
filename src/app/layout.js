@@ -1,5 +1,10 @@
+import SmoothScroll from "@/components/layout/smooth-scroll";
 import "./globals.css";
 import Navbar from "@/components/core/navbar";
+// Choose one of the aurora components:
+// import AnimatedBackground from "@/components/ui/aurora-background";
+// OR for the Three.js version:
+// import AuroraThree from "@/components/aurora-three";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import { Darker_Grotesque, Roboto } from "next/font/google";
@@ -83,10 +88,20 @@ export default function RootLayout({ children }) {
           ${darkerGrotesque.variable}
           ${roboto.variable}
           antialiased
+          relative
         `}
       >
-        <Navbar />
-        {children}
+        {/* Aurora Background - choose one */}
+        {/* <AnimatedBackground /> */}
+        {/* <AuroraThree /> */}
+        
+        {/* Content */}
+    <SmoothScroll>
+    <div className="relative z-10">
+      <Navbar />
+      {children}
+    </div>
+  </SmoothScroll>
       </body>
     </html>
   );

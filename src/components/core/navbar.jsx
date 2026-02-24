@@ -14,37 +14,77 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="relative flex bg-black items-center justify-between px-6 lg:px-12 py-4 font-sans">
+        <nav className="relative flex  items-center justify-between py-1  font-sans">
             <div className="flex items-center gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <img src="/images/logo.png" alt="NeuroPredict Logo" width="200" height="200" />
-                    
+                    <img src="/images/logo.png" alt="NeuroPredict Logo" width="261" height="121" />
+                    <div className="w-[1px] h-10  bg-[#2A2A2A]"></div>
                 </div>
+                
 
                 {/* Nav Links - Desktop */}
                 <div className="hidden md:flex items-center gap-6">
-                    <button className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors">
+                    <button 
+                        className="flex items-center gap-4 text-[#848484] hover:text-white transition-colors"
+                        style={{
+                          fontWeight: 400,
+                          fontStyle: 'normal',
+                          fontSize: '16px'
+                        }}
+                    >
                         Tools
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <button className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors">
+                    <button 
+                        className="flex items-center gap-2 text-[#848484] hover:text-white transition-colors"
+                        style={{
+                          fontWeight: 400,
+                          fontStyle: 'normal',
+                          fontSize: '16px'
+                        }}
+                    >
                         Product
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <a href="#" className="text-gray-300 hover:text-white transition-colors">Blogs</a>
-                    <a href="#" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a 
+                        href="#" 
+                        className="flex items-center gap-4 text-[#848484] hover:text-white transition-colors"
+                        style={{
+                          fontWeight: 400,
+                          fontStyle: 'normal',
+                          fontSize: '16px'
+                        }}
+                    >Blogs</a>
+                    <a 
+                        href="#" 
+                        className="flex items-center gap-4 text-[#848484] hover:text-white transition-colors"
+                        style={{
+                          fontWeight: 400,
+                          fontStyle: 'normal',
+                          fontSize: '16px'
+                        }}
+                    >Pricing</a>
                 </div>
             </div>
 
             {/* Auth Buttons - Desktop */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4 mr-14">
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Log In</a>
-                <button className="bg-[#5552FF]  text-white px-5 py-2 rounded-full transition-colors">
+                <button 
+                    className="bg-[#5552FF] text-white px-5 py-2 rounded-full transition-colors"
+                    style={{
+                      width: '164px',
+                      height: '51px',
+                      fontWeight: 500,
+                      fontStyle: 'medium',
+                      fontSize: '16px'
+                    }}
+                >
                     Get Started
                 </button>
             </div>
@@ -130,6 +170,6 @@ export default function Navbar() {
                     </div>
                 </div>
             )}
-        </nav>
+        </nav>      
     )
 }

@@ -9,9 +9,9 @@ const FeatureDiagramMobile = () => {
                 {/* <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" /> */}
             </div>
 
-            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[500px]">
+            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[300px]">
                 {/* Diagram Container */}
-                <div className="relative bg-[#0F0F0F] w-[100%] h-[540px] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
+                <div className="relative  w-[100%] h-[530px] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg
@@ -99,7 +99,7 @@ const FeatureDiagramMobile = () => {
 
                         {/* Top Right Feature */}
                         <div className="flex justify-end">
-                            <div className="bg-bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[90%] h-[90%] border border-zinc-700">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[90%] h-[90%] border border-zinc-700">
                                 <p className="text-sm text-white">
                                     Know exactly<br />
                                     what to change,<br />
