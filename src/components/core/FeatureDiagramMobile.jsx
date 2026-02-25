@@ -9,7 +9,7 @@ const FeatureDiagramMobile = () => {
                 {/* <img src="/images/hero.png" alt="Hero Background" className="w-full h-full object-cover" /> */}
             </div>
 
-            <div className="relative mx-auto px-6 lg:px-12 pb-24 flex justify-center items-center min-h-[300px]">
+            <div className="relative mx-auto px-6 lg:px-12 pb-50 flex justify-center items-center ">
                 {/* Diagram Container */}
                 <div className="relative  w-[100%] h-[530px] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
 

@@ -67,7 +67,7 @@ const ModernFooter = () => {
                         >
                             Get monthly insights from founders around the globe.
                             <br />
-                            <span className="text-purple-400/80">No spam – promise.</span>
+                            <span className="text-white">No spam – promise.</span>
                         </motion.p>
 
                         <motion.div 
@@ -85,7 +85,7 @@ const ModernFooter = () => {
                                 <motion.button 
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white py-2 px-5 rounded-xl text-sm font-medium transition-all duration-300 shadow-lg shadow-purple-600/25 hover:shadow-purple-600/40"
+                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#5653FF] text-white py-2 px-5 rounded-xl text-sm font-medium transition-all duration-300 shadow-lg shadow-purple-600/25 hover:shadow-purple-600/40"
                                 >
                                     Subscribe
                                 </motion.button>
