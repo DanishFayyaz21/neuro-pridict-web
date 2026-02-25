@@ -67,7 +67,7 @@ const ModernFooter = () => {
                         >
                             Get monthly insights from founders around the globe.
                             <br />
-                            <span className="text-white">No spam – promise.</span>
+                            <span className="text-">No spam – promise.</span>
                         </motion.p>
 
                         <motion.div 

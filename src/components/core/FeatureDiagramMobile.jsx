@@ -16,12 +16,12 @@ const FeatureDiagramMobile = () => {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         {/* Optional: existing dashed rect – keeping it if you want */}
-                        <rect x="50" y="170" width="500" height="200" rx="12" stroke="white" strokeWidth="1.5" strokeDasharray="15 15" />
+                        <rect x="50" y="145" width="500" height="200" rx="12" stroke="white" strokeWidth="1.5" strokeDasharray="15 15" />
                     </svg>
 
-                    {/* Arrow 2 → Top Left box */}
+                    {/* Arrow 4 → bottom right box */}
                     <div
-                        className="absolute top-[20%] left-[70%] bottom-[27%] w-44 md:w-52 opacity-80"
+                        className="absolute top-[20%] left-[70%] bottom-[30%] w-44 md:w-52 opacity-80"
                         style={{ transform: 'rotate(-500deg) ' }}
                     >
                         <svg width="201" height="40" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ const FeatureDiagramMobile = () => {
                         className="absolute top-[53%] left-[17%] w-52 md:w-60 opacity-80"
                         style={{ transform: 'rotate(1deg)' }} // mirrored + slight rotate
                     >
-                        <svg width="145" height="77" viewBox="0 0 219 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="145" height="65" viewBox="0 0 219 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M216.737 1.82694C198.29 18.1648 134.118 54.0869 77.461 34.6738C20.8035 15.2607 11.0834 71.0025 13.3023 101.3M13.3023 101.3L25.926 89.8802M13.3023 101.3L1.82668 89.7333"
                                 stroke="white"
@@ -49,12 +49,12 @@ const FeatureDiagramMobile = () => {
                         </svg>
                     </div>
 
-                    {/* Arrow 4 → Bottom right box */}
+                    {/* Arrow 2 → Top Left box box */}
                     <div
-                        className="absolute bottom-[60%] right-[45%]  left-[39%] top-[42%]  w-40 md:w-48 opacity-80"
+                        className="absolute bottom-[60%] right-[45%]  left-[50%] top-[32%]  w-40 md:w-48 opacity-80"
                         style={{ transform: 'rotate(250deg)' }}
                     >
-                        <svg width="130" height="110" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="130" height="80" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.50721 1.49246C5.67805 37.2478 34.2878 103.149 113.418 112.673M113.418 112.673L95.7436 121.771M113.418 112.673L98.7143 99.4051"
                                 stroke="white"
@@ -69,7 +69,7 @@ const FeatureDiagramMobile = () => {
                         className="absolute top-[19%] right-[55%] w-48 md:w-56 opacity-80"
                         style={{ transform: 'rotate(-100deg)' }} // mirrored for better direction
                     >
-                        <svg width="110" height="140" viewBox="0 0 165 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100" height="110" viewBox="0 0 165 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.8156 106.657C26.8612 64.5165 58.7146 -32.0867 161.82 34.0031M161.82 34.0031L120.814 38.4212M161.82 34.0031L141.95 1.60314"
                                 stroke="white"

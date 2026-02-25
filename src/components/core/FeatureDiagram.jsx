@@ -5,9 +5,9 @@ const FeatureDiagram = () => {
         <div className="relative ">
             {/* Background Image */}
             <div 
-            className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center   items-center min-h-[770px] lg:min-h-[840px] xl:min-h-[870px]">
+            className="relative mx-auto px-6 lg:px-12 pb-8 flex justify-center    items-center min-h-[770px] lg:min-h-[840px] xl:min-h-[875px]">
                 {/* Diagram Container */}
-                <div className="relative  mb-[-12%] border w-[80%] h-[100%]   backdrop-blur-sm rounded-t-2xl p-8 md:p-12 overflow-hidden border-b-0">
+                <div className="relative  mb-[-12%] border w-[70%] h-[120%] bg-black/2 backdrop-blur-md rounded-t-2xl p-8 md:p-12 overflow-hidden border-b-0">
 
                     {/* SVG Lines + Arrows Container */}
                     <svg
@@ -17,15 +17,15 @@ const FeatureDiagram = () => {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         {/* Optional: existing dashed rect – keeping it if you want */}
-                        <rect x="130" y="150" width="350" height="160" rx="8" stroke="white" strokeWidth="3" strokeDasharray="50 30" />
+                        <rect x="130" y="150" width="350" height="180" rx="8" stroke="white" strokeWidth="3" strokeDasharray="50 30" />
                     </svg>
 
                     {/* Arrow 1 → Top Left box */}
                     <div
-                        className="absolute top-[24%] left-[15%] right-[15%] w-44 md:w-52 opacity-80"
-                        style={{ transform: 'rotate(-9deg)' }}
+                        className="absolute top-[16%] left-[18%] right-[15%] w-44 md:w-52 opacity-80"
+                        style={{ transform: 'rotate(-5deg)' }}
                     >
-                        <svg width="200" height="130" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="150" height="180" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
@@ -37,10 +37,10 @@ const FeatureDiagram = () => {
 
                     {/* Arrow 3 → Bottom left box */}
                     <div
-                        className="absolute top-[44%] left-[17%] w-52 md:w-60 opacity-80"
+                        className="absolute top-[49%] left-[17%] w-52 md:w-60 opacity-80"
                         style={{ transform: 'rotate(1deg)' }} // mirrored + slight rotate
                     >
-                        <svg width="230" height="140" viewBox="0 0 219 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="170" height="120" viewBox="0 0 219 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M216.737 1.82694C198.29 18.1648 134.118 54.0869 77.461 34.6738C20.8035 15.2607 11.0834 71.0025 13.3023 101.3M13.3023 101.3L25.926 89.8802M13.3023 101.3L1.82668 89.7333"
                                 stroke="white"
@@ -52,10 +52,10 @@ const FeatureDiagram = () => {
 
                     {/* Arrow 4 → Bottom right box */}
                     <div
-                        className="absolute bottom-[43%] right-[25%] top-[54%]  w-40 md:w-48 opacity-80"
+                        className="absolute bottom-[43%] right-[20%] top-[54%]  w-40 md:w-48 opacity-80"
                         style={{ transform: 'rotate(`0deg)' }}
                     >
-                        <svg width="240" height="130" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="200" height="120" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.50721 1.49246C5.67805 37.2478 34.2878 103.149 113.418 112.673M113.418 112.673L95.7436 121.771M113.418 112.673L98.7143 99.4051"
                                 stroke="white"
@@ -67,10 +67,10 @@ const FeatureDiagram = () => {
 
                     {/* Arrow 2 → Top Right box */}
                     <div
-                        className="absolute top-[10%] right-[22%] w-48 md:w-56 opacity-80"
+                        className="absolute top-[5%] right-[15%] w-48 md:w-56 opacity-80"
                         style={{ transform: 'rotate(-10deg)' }} // mirrored for better direction
                     >
-                        <svg width="190" height="170" viewBox="0 0 165 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="150" height="170" viewBox="0 0 165 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.8156 106.657C26.8612 64.5165 58.7146 -32.0867 161.82 34.0031M161.82 34.0031L120.814 38.4212M161.82 34.0031L141.95 1.60314"
                                 stroke="white"
@@ -85,7 +85,7 @@ const FeatureDiagram = () => {
 
                         {/* Top Left Feature */}
                         <div className="flex justify-start">
-                            <div className="bg-[#1a1a1a] backdrop-blur text-start rounded-2xl p-4 w-[35%] h-[85%] border  text-center">
+                            <div className="bg-[#1a1a1a] backdrop-blur text-start rounded-2xl p-4 lg:w-[49%] xl:w-[40%]  lg:h-[68%] xl:h-[69%] border  text-center">
                                 <p className="text-sm text-white">
                                     <span className="text-white font-bold">Avoid confusion</span><br />
                                     detect friction early
@@ -94,8 +94,8 @@ const FeatureDiagram = () => {
                         </div>
 
                         {/* Top Right Feature */}
-                        <div className="flex justify-end  pt-4">
-                            <div className=" bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[45%] border border-[#FCFAFA]">
+                        <div className="flex justify-end ">
+                            <div className=" bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[40%] border border-[#FCFAFA]">
                                 <p className="text-sm  text-white">
                                     Know exactly<br />
                                     what to change,<br />
@@ -109,14 +109,14 @@ const FeatureDiagram = () => {
                     {/* Center Button */}
                     <div className="flex justify-center my-10 md:my-14 z-10 relative">
                         <button 
-                            className="flex items-center gap-3 bg-[#0F0F0F] border font-darker font-semibold text-3xl text-white px-6 py-3 rounded-full font-bold transition-colors"
+                            className="flex items-center  gap-3 bg-[#0F0F0F] border font-darker font-semibold text-3xl text-white px-6 py-3 rounded-full font-bold transition-colors"
                             style={{
                               fontWeight: 600,
                               fontStyle: 'semibold',
-                              fontSize: '35px'
+                              fontSize: '23px'
                             }}
                         >
-                            <svg className="w-10 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="w-10 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                             </svg>
                             Start Testing Now
@@ -127,8 +127,8 @@ const FeatureDiagram = () => {
                     <div className="relative grid grid-cols-2 pt-3 gap-8 md:gap-9 mb-4 mt-12 z-10">
 
                         {/* Bottom Left Feature */}
-                        <div className="flex justify-start ml-16 pt-4">
-                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl p-4 w-[65%] h-[70%] border">
+                        <div className="flex justify-start mt-4">
+                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl p-4 lg:w-[60%] lg:h-[84%] xl:w-[50%] xl:h-[85%] border">
                                 <p className="text-sm text-white">
                                     See if your message flows<br />
                                     in the right <span className="font-bold">visual order</span>
@@ -137,9 +137,9 @@ const FeatureDiagram = () => {
                         </div>
 
                         {/* Bottom Right Feature */}
-                        <div className="flex justify-end pb-9">
-                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl p-4 w-[45%] border ">
-                                <p className="text-sm text-white">
+                        <div className="flex justify-end mr-5">
+                            <div className="bg-zinc-800/80 backdrop-blur rounded-2xl  p-4 lg:w-[49%] lg:mr-[-26px] xl:mr-[-2px] lg:h-[84%] xl:w-[39%] xl:h-[87%] border ">
+                                <p className="text-sm text-white text-center">
                                     Predict where<br />
                                     eyes go first and<br />
                                     what gets <span className="font-bold">Ignored</span>
