@@ -57,6 +57,10 @@ const Neuroadviseintro = () => {
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-purple-600/5 bg-black rounded-full blur-3xl animate-pulse-slow"></div>
       <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px]  bg-blue-600/5 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
 
+      {/* Left and Right Shadow Effects */}
+      <div className="absolute left-0 top-2/5 bottom-0 w-50 h-85 bg-gradient-to-r from-purple-600/30 via-purple-600/70 to-transparent blur-3xl"></div>
+      <div className="absolute right-0 top-2/5 bottom-0 w-52 h-85 bg-gradient-to-l from-orange-500/30 via-orange-500/70 to-transparent blur-3xl"></div>
+
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:80px_80px]"></div>
 

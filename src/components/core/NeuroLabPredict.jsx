@@ -48,7 +48,12 @@ const NeuroLabPredict = () => {
   };
 
   return (
-    <div ref={ref} className="min-h-screen  text-gray-200 mt-0">
+    <div ref={ref} className="min-h-screen  text-gray-200 mt-0 relative overflow-hidden">
+      {/* Corner Shadow Effects */}
+      <div className="absolute top-1/4 right-0 w-78 h-58 bg-gradient-to-bl from-orange-500/40 via-orange-500/70 to-transparent blur-3xl"></div>
+      <div className="absolute bottom-1/6 left-0 w-78 h-58 bg-gradient-to-tr from-purple-600/30 via-purple-600/80 to-transparent blur-3xl"></div>
+        <div className="absolute bottom-2/4 left-0 w-78 h-58 bg-gradient-to-tr from-purple-600/30 via-purple-600/40 to-transparent blur-3xl"></div>
+        
       <motion.div
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -156,7 +161,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 ml-8  rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3 ml-8  bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
@@ -230,7 +235,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 rounded-full font-semibold text-white ml-3 transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3 rounded-full bg-[#1A1A1A] font-semibold text-white ml-3 transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
@@ -305,7 +310,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3  ml-[-8] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3  ml-[-8] rounded-full bg-[#1A1A1A] font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
