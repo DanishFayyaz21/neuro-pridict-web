@@ -62,14 +62,6 @@ const NeuroLabPredict = () => {
         <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-semibold mb-0 tracking-tight">
           <span 
             className="bg-gradient-to-r from-[#5653FF] to-[#D252FF] font-darker bg-clip-text text-transparent"
-            style={{
-              fontWeight: 400,
-              fontStyle: 'normal',
-              fontSize: '55.27px',
-              lineHeight: '110%',
-              letterSpacing: '0%',
-              textAlign: 'center'
-            }}
           >Welcome to</span>
         </h1>
         <motion.div 
@@ -95,7 +87,7 @@ const NeuroLabPredict = () => {
         {/* Attention Card - Image Left, Details Right */}
         <motion.div 
           ref={card1Ref}
-          className="group relative  backdrop-blur-xl rounded-2xl p-8 md:p-10"
+          className="group relative   rounded-2xl p-8 md:p-10"
           variants={containerVariants}
           initial="hidden"
           animate={card1InView ? "visible" : "hidden"}
@@ -173,7 +165,7 @@ const NeuroLabPredict = () => {
         {/* Empath Card - Details Left, Image Right */}
         <motion.div 
           ref={card2Ref}
-          className="group relative  backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
+          className="group relative   rounded-2xl p-8 md:p-10 transition-all duration-300"
           variants={containerVariants}
           initial="hidden"
           animate={card2InView ? "visible" : "hidden"}
@@ -247,7 +239,7 @@ const NeuroLabPredict = () => {
         {/* Lumina Card - Image Left, Details Right */}
         <motion.div 
           ref={card3Ref}
-          className="group relative backdrop-blur-xl rounded-2xl p-8 md:p-10 transition-all duration-300"
+          className="group relative  rounded-2xl p-8 md:p-10 transition-all duration-300"
           variants={containerVariants}
           initial="hidden"
           animate={card3InView ? "visible" : "hidden"}

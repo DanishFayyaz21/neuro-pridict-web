@@ -1,53 +1,55 @@
+"use client";
+
+import { motion } from "framer-motion";
+import FeatureCard from "../ui/feature-card";
 
 const FeatureDiagramMobile = () => {
-    return (
-        <div className="relative mt-32">
-            {/* Background Image */}
+  return (
+    <div className="relative">
+      <div className="relative mx-auto px-6 backdrop-blur-xl  lg:px-12 pb-8 flex justify-center items-center min-h-[570px] lg:min-h-[640px] xl:min-h-[675px]">
         
-            <div className="relative mx-auto px-6 lg:px-12 pb-50 flex justify-center items-center ">
-                {/* Diagram Container */}
-                <div className="relative  w-[100%] h-[530px] backdrop-blur-sm rounded-3xl p-8 md:p-12 overflow-hidden">
+        {/* Main Container */}
+        <div className="relative mb-[-12%] border w-[85%] xl:w-[70%] bg-black/5 backdrop-blur-md rounded-t-2xl p-8 md:p-12 overflow-hidden border-b-0">
 
-                    {/* SVG Lines + Arrows Container */}
-                    <svg
-                        className="absolute inset-0 w-full h-full pointer-events-none"
-                        viewBox="0 0 600 500"  // Adjusted viewBox to match container size roughly
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        {/* Optional: existing dashed rect – keeping it if you want */}
-                        <rect x="50" y="145" width="500" height="200" rx="12" stroke="white" strokeWidth="1.5" strokeDasharray="15 15" />
-                    </svg>
+          {/* Background SVG Rectangle */}
+          <svg
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            viewBox="0 0 600 500"
+            preserveAspectRatio="none"
+            fill="none"
+          >
+            <rect
+              x="25%"
+              y="30%"
+              width="50%"
+              height="39%"
+              rx="10"
+              stroke="white"
+              strokeWidth="3"
+              strokeDasharray="30 20"
+            />
+          </svg>
 
-                    {/* Arrow 4 → bottom right box */}
-                    <div
-                        className="absolute top-[20%] left-[70%] bottom-[30%] w-44 md:w-52 opacity-80"
-                        style={{ transform: 'rotate(-500deg) ' }}
-                    >
-                        <svg width="201" height="40" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
-                                stroke="white"
-                                strokeWidth="3.89672"
-                                strokeLinecap="round"
-                            />
-                        </svg>
-                    </div>
+          {/* ================= ARROWS ================= */}
 
-                    {/* Arrow 3 → Bottom left box */}
-                    <div
-                        className="absolute top-[53%] left-[17%] w-52 md:w-60 opacity-80"
-                        style={{ transform: 'rotate(1deg)' }} // mirrored + slight rotate
-                    >
-                        <svg width="145" height="65" viewBox="0 0 219 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M216.737 1.82694C198.29 18.1648 134.118 54.0869 77.461 34.6738C20.8035 15.2607 11.0834 71.0025 13.3023 101.3M13.3023 101.3L25.926 89.8802M13.3023 101.3L1.82668 89.7333"
-                                stroke="white"
-                                strokeWidth="3.65271"
-                                strokeLinecap="round"
-                            />
-                        </svg>
-                    </div>
+          {/* Arrow 1 → Top Left */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 0.8, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="absolute top-[29%] left-[22%] w-40 md:w-30 "
+            style={{ transform: "rotate(-8deg)", height: "100px" }}
+          >
+            <svg viewBox="0 0 120 77" fill="none">
+              <path
+                d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
+                stroke="white"
+                strokeWidth="4"
+                strokeLinecap="round"
+              />
+            </svg>
+          </motion.div>
 
                     {/* Arrow 2 → Top Left box box */}
                     <div
