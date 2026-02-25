@@ -37,7 +37,6 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-
 /* =============================
    Google Fonts (Optimized)
 ============================= */
@@ -69,8 +68,9 @@ const roboto = Roboto({
 ============================= */
 
 export const metadata = {
-  title: "Neuro Predict",
-  description: "AI-powered predictions for marketing research",
+  title: "Neuro Predict | AI Marketing Intelligence",
+  description:
+    "Next-gen AI predictions to power smarter marketing strategies and data-backed growth.",
 };
 
 /* =============================
@@ -91,17 +91,13 @@ export default function RootLayout({ children }) {
           relative
         `}
       >
-        {/* Aurora Background - choose one */}
-        {/* <AnimatedBackground /> */}
-        {/* <AuroraThree /> */}
-        
         {/* Content */}
-    <SmoothScroll>
-    <div className="relative z-10">
-      <Navbar />
-      {children}
-    </div>
-  </SmoothScroll>
+        <SmoothScroll>
+          <div className="relative z-10">
+            <Navbar />
+            {children}
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );

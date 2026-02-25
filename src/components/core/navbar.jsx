@@ -1,9 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
+import ComingSoonModal from '../ui/coming-soon'
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+    const [showComingSoon, setShowComingSoon] = useState(false) // Add this state
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -12,7 +15,6 @@ export default function Navbar() {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false)
     }
-
     return (
         <nav className="relative flex  items-center justify-between py-1  font-sans">
             <div className="flex items-center gap-8">
@@ -76,6 +78,10 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-4 mr-14">
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Log In</a>
                 <button 
+                        onClick={() => {
+                            setShowComingSoon(true);
+                            closeMobileMenu();
+                        }}
                     className="bg-[#5552FF] text-white px-5 py-2 rounded-full transition-colors"
                     style={{
                       width: '164px',
@@ -87,6 +93,7 @@ export default function Navbar() {
                 >
                     Get Started
                 </button>
+
             </div>
 
             {/* Mobile Get Started Button */}
@@ -170,6 +177,10 @@ export default function Navbar() {
                     </div>
                 </div>
             )}
+                <ComingSoonModal 
+                isOpen={showComingSoon} 
+                onClose={() => setShowComingSoon(false)} 
+            />
         </nav>      
     )
 }

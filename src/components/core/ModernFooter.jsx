@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const ModernFooter = () => {
     return (
-        <footer className="relative bg-black text-gray-300 font-sans pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 overflow-hidden">
+        <footer className="relative bg-black rounded-tl-[70px] rounded-tr-[70px]  text-gray-300 font-sans pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 overflow-hidden">
             {/* Creative top border with rounded edges - transparent outside */}
-            <div className="absolute top-0 left-0 right-0 h-32 pointer-events-none overflow-visible">
+            <div className="absolute  top-0 left-0 right-0 h-32 pointer-events-none overflow-visible">
                 {/* Left curved corner */}
                 <div className="absolute top-0 left-0 w-40 h-40">
                     <div className="absolute top-0 left-0 w-full h-full">
