@@ -14,7 +14,6 @@ export default function Home() {
   return (
 
     <div className="min-h-screen text-white overflow-hidden scroll-smooth">
-
       <Hero />
       
       {/* Feature Diagram */}

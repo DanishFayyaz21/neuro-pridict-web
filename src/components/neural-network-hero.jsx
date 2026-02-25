@@ -205,7 +205,7 @@ function ShaderBackground() {
   return (
     <div
       ref={canvasRef}
-      className="bg-black absolute inset-0 -z-10 w-full h-full"
+      className="fixed inset-0 -z-10 w-screen h-screen"
       aria-hidden>
       <Canvas
         camera={camera}
@@ -214,8 +214,7 @@ function ShaderBackground() {
         style={{ width: '100%', height: '95%' }}>
         <ShaderPlane />
       </Canvas>
-      <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-purple-900/20 to-black/30" />
     </div>
   );
 }
@@ -298,8 +297,6 @@ export default function Hero() {
   {/* Top Fade */}
   <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent" />
 
-  {/* Bottom Fade */}
-  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
 </section>
 
   );
