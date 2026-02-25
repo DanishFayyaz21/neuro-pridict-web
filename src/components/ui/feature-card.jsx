@@ -31,22 +31,22 @@ const FeatureCard = ({ children, align = "start" }) => {
                    w-auto
                    
                    /* Minimum widths for each card based on content */
-                   min-w-[180px]
-                   xs:min-w-[200px]
-                   sm:min-w-[220px]
-                   md:min-w-[240px]
-                   lg:min-w-[260px]
-                   xl:min-w-[280px]
-                   2xl:min-w-[300px]
+                   min-w-[140px]
+                   xs:min-w-[160px]
+                   sm:min-w-[180px]
+                   md:min-w-[200px]
+                   lg:min-w-[220px]
+                   xl:min-w-[240px]
+                   2xl:min-w-[260px]
                    
                    /* Maximum widths to prevent cards from getting too large */
-                   max-w-[200px]
-                   xs:max-w-[220px]
-                   sm:max-w-[250px]
-                   md:max-w-[280px]
-                   lg:max-w-[320px]
-                   xl:max-w-[360px]
-                   2xl:max-w-[400px]
+                   max-w-[160px]
+                   xs:max-w-[180px]
+                   sm:max-w-[200px]
+                   md:max-w-[220px]
+                   lg:max-w-[240px]
+                   xl:max-w-[260px]
+                   2xl:max-w-[280px]
                    
                    border border-[#FCFAFA]
                    flex items-center justify-center

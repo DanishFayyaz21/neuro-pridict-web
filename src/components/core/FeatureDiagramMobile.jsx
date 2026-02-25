@@ -38,8 +38,8 @@ const FeatureDiagramMobile = () => {
             whileInView={{ opacity: 0.8, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="absolute top-[29%] left-[22%] w-40 md:w-30 "
-            style={{ transform: "rotate(-8deg)", height: "100px" }}
+            className="absolute top-[35%] left-[20%] w-32 md:w-36"
+            style={{ transform: "rotate(-45deg)" }}
           >
             <svg viewBox="0 0 120 77" fill="none">
               <path
@@ -51,31 +51,46 @@ const FeatureDiagramMobile = () => {
             </svg>
           </motion.div>
 
-                    {/* Arrow 2 → Top Left box box */}
+                    {/* Arrow 2 → Top Right */}
                     <div
-                        className="absolute bottom-[60%] right-[45%]  left-[50%] top-[32%]  w-40 md:w-48 opacity-80"
-                        style={{ transform: 'rotate(250deg)' }}
+                        className="absolute top-[35%] right-[20%] w-32 md:w-36 opacity-80"
+                        style={{ transform: 'rotate(45deg)' }}
                     >
-                        <svg width="130" height="80" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M1.50721 1.49246C5.67805 37.2478 34.2878 103.149 113.418 112.673M113.418 112.673L95.7436 121.771M113.418 112.673L98.7143 99.4051"
+                                d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
-                                strokeWidth="3"
+                                strokeWidth="4"
                                 strokeLinecap="round"
                             />
                         </svg>
                     </div>
 
-                    {/* Arrow 1 → Top leftbox */}
+                    {/* Arrow 3 → Bottom Left */}
                     <div
-                        className="absolute top-[19%] right-[55%] w-48 md:w-56 opacity-80"
-                        style={{ transform: 'rotate(-100deg)' }} // mirrored for better direction
+                        className="absolute bottom-[25%] left-[77%] w-32 md:w-36 opacity-80"
+                        style={{ transform: 'rotate(45deg)' }}
                     >
-                        <svg width="100" height="110" viewBox="0 0 165 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="190" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M1.8156 106.657C26.8612 64.5165 58.7146 -32.0867 161.82 34.0031M161.82 34.0031L120.814 38.4212M161.82 34.0031L141.95 1.60314"
+                                d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
-                                strokeWidth="3.42567"
+                                strokeWidth="4"
+                                strokeLinecap="round"
+                            />
+                        </svg>
+                    </div>
+
+                    {/* Arrow 4 → Bottom Right */}
+                    <div
+                        className="absolute bottom-[25%] right-[20%] w-32 md:w-36 opacity-80"
+                        style={{ transform: 'rotate(-45deg)' }}
+                    >
+                        <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
+                                stroke="white"
+                                strokeWidth="4"
                                 strokeLinecap="round"
                             />
                         </svg>
