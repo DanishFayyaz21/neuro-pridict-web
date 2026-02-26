@@ -10,19 +10,29 @@ const FeatureDiagram = () => {
 
                 <div
                     className="
-                               relative w-full max-w-[95%] 
-                              sm:max-w-[90%] 
-                                  md:max-w-[85%] 
-    lg:max-w-[1100px]
-    border border-[#FCFAFA] border-t-2xl border-b-0 rounded-t-2xl
-    bg-black/5 backdrop-blur-md 
-    p-6 sm:p-8 md:p-10 lg:p-12
-    min-h-[480px] 
-    sm:min-h-[520px] 
-    md:min-h-[580px] 
-    lg:min-h-[720px]
-    overflow-visible
-  "
+                        relative 
+                        w-full 
+                        max-w-[95%] 
+                        sm:max-w-[90%] 
+                        md:max-w-[85%] 
+                        lg:max-w-[1100px]
+                        border 
+                        border-[#FCFAFA] 
+                        border-t-2xl 
+                        border-b-0 
+                        rounded-t-2xl
+                        bg-black/5 
+                        backdrop-blur-md 
+                        p-6 
+                        sm:p-8 
+                        md:p-10 
+                        lg:p-12
+                        min-h-[480px] 
+                        sm:min-h-[520px] 
+                        md:min-h-[580px] 
+                        lg:min-h-[720px]
+                        overflow-visible
+                    "
                 >
                     {/* Background rectangle */}
                     <svg
@@ -31,14 +41,14 @@ const FeatureDiagram = () => {
                         preserveAspectRatio="none"
                     >
                         <rect
-                            x="26"
-                            y="25"
+                            x="25"
+                            y="30"
                             width="50"
-                            height="45"
+                            height="40"
                             rx="3"
                             stroke="white"
                             strokeWidth="1.2"
-                            strokeDasharray="7 7"
+                            strokeDasharray="6 9"
                             fill="none"
                         />
                     </svg>
@@ -87,7 +97,7 @@ const FeatureDiagram = () => {
                             whileInView={{ opacity: 0.8, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.15 }}
                             viewport={{ once: true }}
-                            className="absolute bottom-[29%] left-[15%] w-[40%] max-w-[300px] rotate-[5deg]"
+                            className="absolute bottom-[19%] left-[17%] w-[40%] max-w-[300px] rotate-[-6deg]"
                         >
                             <svg viewBox="0 0 219 104" fill="none" className="w-full h-auto">
                                 <path
@@ -105,7 +115,7 @@ const FeatureDiagram = () => {
                             whileInView={{ opacity: 0.8, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="absolute bottom-[15%] right-[33%] w-[15%] max-w-[230px] rotate-[3deg]"
+                            className="absolute bottom-[15%] right-[31%] w-[15%] max-w-[230px] rotate-[3deg]"
                         >
                             <svg viewBox="0 0 117 124" fill="none" className="w-full h-auto">
                                 <path
