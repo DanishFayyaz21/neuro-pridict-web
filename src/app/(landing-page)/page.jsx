@@ -6,6 +6,7 @@ import ModernFooter from '@/components/core/ModernFooter';
 import Neuroadviseintro from '@/components/core/Neuroadviseintro';
 import FeatureDiagram from '@/components/core/FeatureDiagram';
 import FeatureDiagramMobile from '@/components/core/FeatureDiagramMobile';
+import ScaleUpSection from '@/components/core/ScaleUpSection';
 
 
 
@@ -28,7 +29,10 @@ export default function Home() {
       </section>
       <section>
         <Neuroadviseintro />
-      </section> 
+      </section>
+      <section>
+        <ScaleUpSection />
+      </section>
       <section>
         <ModernFooter />  
       </section>

@@ -19,10 +19,10 @@ const FeatureDiagramMobile = () => {
             fill="none"
           >
             <rect
-              x="25%"
-              y="30%"
-              width="50%"
-              height="39%"
+              x="13%"
+              y="33%"
+              width="75%"
+              height="30%"
               rx="10"
               stroke="white"
               strokeWidth="3"
@@ -38,8 +38,8 @@ const FeatureDiagramMobile = () => {
             whileInView={{ opacity: 0.8, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="absolute top-[35%] left-[20%] w-32 md:w-36"
-            style={{ transform: "rotate(-45deg)" }}
+            className="absolute top-[50%] left-[20%] w-22 md:w-16"
+            style={{ transform: "rotate (5566deg)" }}
           >
             <svg viewBox="0 0 120 77" fill="none">
               <path
@@ -53,10 +53,10 @@ const FeatureDiagramMobile = () => {
 
                     {/* Arrow 2 → Top Right */}
                     <div
-                        className="absolute top-[35%] right-[20%] w-32 md:w-36 opacity-80"
+                        className="absolute top-[26%] right-[20%] w-22 md:w-36 opacity-80"
                         style={{ transform: 'rotate(45deg)' }}
                     >
-                        <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="77" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
@@ -68,10 +68,10 @@ const FeatureDiagramMobile = () => {
 
                     {/* Arrow 3 → Bottom Left */}
                     <div
-                        className="absolute bottom-[25%] left-[77%] w-32 md:w-36 opacity-80"
-                        style={{ transform: 'rotate(45deg)' }}
+                        className="absolute bottom-[38%] left-[37%] w-32 md:w-36 opacity-80"
+                        style={{ transform: 'rotate(222deg)' }}
                     >
-                        <svg width="190" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
@@ -83,10 +83,10 @@ const FeatureDiagramMobile = () => {
 
                     {/* Arrow 4 → Bottom Right */}
                     <div
-                        className="absolute bottom-[25%] right-[20%] w-32 md:w-36 opacity-80"
-                        style={{ transform: 'rotate(-45deg)' }}
+                        className="absolute bottom-[52%] right-[52%] w-32 md:w-36 opacity-80"
+                        style={{ transform: 'rotate(50deg)' }}
                     >
-                        <svg width="120" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100" height="77" viewBox="0 0 120 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M178.659 63.9315C101.654 101.454 24.0518 29.239 2.04705 2.35624M2.04705 2.35624L25.5518 7.84258M2.04705 2.35624L2.04705 19.3637"
                                 stroke="white"
@@ -101,7 +101,7 @@ const FeatureDiagramMobile = () => {
 
                         {/* Top Left Feature */}
                         <div className="flex justify-start">
-                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[84%] h-[90%] border border-zinc-700 text-center">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl  w-[130%] h-[100%] border border-zinc-700 text-center">
                                 <p className="text-sm text-white">
                                     <span className="text-white">Avoid confusion</span><br />
                                     detect friction early
@@ -111,8 +111,8 @@ const FeatureDiagramMobile = () => {
 
                         {/* Top Right Feature */}
                         <div className="flex justify-end">
-                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-[90%] h-[90%] border border-zinc-700">
-                                <p className="text-sm text-white">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl pl-1 w-[130%] h-[100%] border border-zinc-700">
+                                <p className="text-sm text-white text-center">
                                     Know exactly<br />
                                     what to change,<br />
                                     and <span className="font-bold">why</span>
@@ -137,7 +137,7 @@ const FeatureDiagramMobile = () => {
 
                         {/* Bottom Left Feature */}
                         <div className="flex justify-start mt-6">
-                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-full border border-zinc-700">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl pl-2 w-[126%] h-[92%] border border-zinc-700">
                                 <p className="text-sm text-white">
                                     See if your message flows<br />
                                     in the right <span className="font-bold">visual order</span>
@@ -147,7 +147,7 @@ const FeatureDiagramMobile = () => {
 
                         {/* Bottom Right Feature */}
                         <div className="flex justify-end mt-6">
-                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl p-4 w-full border border-zinc-700">
+                            <div className="bg-[#1a1a1a] backdrop-blur rounded-2xl pl-2 w-[126%] h-[102%] border border-zinc-700">
                                 <p className="text-sm text-white">
                                     Predict where<br />
                                     eyes go first and<br />

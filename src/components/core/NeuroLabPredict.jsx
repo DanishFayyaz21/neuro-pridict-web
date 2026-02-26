@@ -48,7 +48,7 @@ const NeuroLabPredict = () => {
   };
 
   return (
-    <div ref={ref} className="min-h-screen  text-gray-200 mt-0 relative overflow-hidden">
+    <div ref={ref} className="min-h-screen text-gray-200 mt-0 relative overflow-hidden pb-0">
       {/* Corner Shadow Effects */}
       <div className="absolute top-1/4 right-0 w-78 h-58 bg-gradient-to-bl from-orange-500/40 via-orange-500/70 to-transparent blur-3xl"></div>
       <div className="absolute bottom-1/6 left-0 w-78 h-58 bg-gradient-to-tr from-purple-600/30 via-purple-600/80 to-transparent blur-3xl"></div>
