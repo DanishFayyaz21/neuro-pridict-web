@@ -73,7 +73,7 @@ const NeuroLabPredict = () => {
           <img 
             src="/images/labwhite.png" 
             alt="LAB" 
-            className="max-w-md"
+            className=" w-[20%] lg:w-[20%]"
             style={{
               width: '448.0380554199219px',
               height: '174.0531768798828px'
@@ -153,7 +153,7 @@ const NeuroLabPredict = () => {
               >
                 <a
                   href="#"
-                  className="inline-block px-8 py-3 ml-8  bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
+                  className="inline-block px-8 py-3 ml-18 lg:ml-10 bg-[#1A1A1A] rounded-full font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Learn More →
                 </a>
